@@ -3,16 +3,18 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 struct User {
-    std::string username;
-    std::string password_hash;
-    std::string full_name;
-    std::string address;
-    std::string phone;
+    string username;
+    string password_hash;
+    string full_name;
+    string address;
+    string phone;
 };
 
 bool registerUser();
-bool loginUser(std::string& username);
-bool isUsernameUnique(const std::string& username);
-std::string hashPassword(const std::string& password);
-std::vector<User> loadUsers();
+bool loginUser(string& username);
+bool isUsernameUnique(const string& username);
+string hashPassword(const string& password);
+vector<User> loadUsers();

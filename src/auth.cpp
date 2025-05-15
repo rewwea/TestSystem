@@ -88,4 +88,3 @@ vector<User> loadUsers() {
     }
     return users;
 }
-
